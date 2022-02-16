@@ -1,0 +1,85 @@
+@use '../../../styles/base' as *;
+
+.main-footer {
+    width: 100vw;
+
+    background-color: $darkGray;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        width: 100%;
+        max-width: 85rem;
+        min-height: 8rem;
+        padding: 1rem;
+        margin: 0 auto;
+
+        @media (min-width: 55rem) {
+            flex-direction: row;
+            gap: 0;
+
+            padding: 1rem 3rem;
+        }
+
+        .signup-newsletter-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            span {
+                font-size: 0.8rem;
+                font-weight: 700;
+                color: $white;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                @media (min-width: 55rem) {
+                    display: block;
+                    width: unset;
+                }
+
+                input {
+                    width: 60%;
+                    height: 2.5rem;
+                    padding: 1rem 1rem 1rem 1.5rem;
+
+                    background-color: transparent;
+                    color: $white;
+                    border-radius: 10px;
+                    border: 1px solid #808080;
+                    outline: none;
+
+                    @media (min-width: 55rem) {
+                        width: 20rem;
+                    }
+                }
+
+                button {
+                    position: relative;
+                    right: -1rem;
+                    width: 8rem;
+                    height: 2.5rem;
+
+                    background: linear-gradient(to left top, $lightBlue, #0769c4);
+                    color: $white;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        img {
+            width: 20rem;
+        }
+    }
+}

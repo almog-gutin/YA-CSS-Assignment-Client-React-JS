@@ -1,0 +1,56 @@
+@use '../../../styles/base' as *;
+
+.sale-selection {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: $black;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        width: 100%;
+        max-width: 85rem;
+        height: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+
+        .sales-header {
+            width: 100%;
+
+            .title {
+                margin-bottom: 0%;
+
+                font-size: 2rem;
+                color: $darkBlue;
+            }
+
+            .subtitle {
+                color: $white;
+            }
+        }
+
+        .sale__items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+
+            width: 100%;
+            height: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            @media (min-width: 86rem) {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+    }
+}

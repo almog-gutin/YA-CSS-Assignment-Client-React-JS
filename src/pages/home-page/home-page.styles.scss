@@ -1,0 +1,10 @@
+@use '../../styles/base' as *;
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    min-height: 100vh;
+}
