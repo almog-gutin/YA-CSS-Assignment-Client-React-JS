@@ -49,7 +49,7 @@ It is built with the React library to build a single page application and we sty
 **Git clone**
 
 ```
-git clone https://github.com/almog-gutin/YA-CSS-Assignment-Client-React-JS.git
+git clone https://github.com/almoggutin/YA-CSS-Assignment-Client-React-JS.git
 ```
 
 **Instructions**
